@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Go Template</title>
+</head>
+<body>
+  {{ greet "Gotmpl"}}
+  <ul>
+  {{range $person := .}}
+    <li>{{$person.Name}} of {{$person.Age}} years old</li>
+  {{end}}
+  </ul>
+</body>
+</html>
